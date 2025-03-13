@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { View, Text, TextInput, TouchableOpacity, Alert, StyleSheet } from 'react-native'
 
-const AddLocation = ({ navigation, route }) => {
+const AddLocation = ({ navigation }) => {
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
     const [rating, setRating] = useState('')

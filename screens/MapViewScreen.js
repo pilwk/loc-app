@@ -8,7 +8,8 @@ const MapViewScreen = ({ route }) => {
     const { locationName } = route.params
     const [coordinates, setCoordinates] = useState({ latitude: 0, longitude: 0 })
     const [loading, setLoading] = useState(true)
-    //fallback coordinates set to Oulu
+
+    //fallback coordinates
     const fallBack = { latitude: 65.0121, longitude: 25.4651 }
 
     useEffect(() => {
@@ -87,6 +88,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-});
+})
 
 export default MapViewScreen
